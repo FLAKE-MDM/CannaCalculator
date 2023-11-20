@@ -1,0 +1,105 @@
+.icon{
+    background-repeat: no-repeat;
+    background-size: contain!important;
+    background-position: 0 0;
+    display: inline-block;
+    flex-shrink: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+
+    &_double{
+        position: relative;
+
+        @include bp(hv){
+            &:hover{
+                &:before{opacity: 0;}
+                &:after{opacity: 1;}
+            }
+        }
+
+        &:before, &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            transition: all 0.3s ease-out;
+        }
+        &:after{
+            opacity: 0;
+        }
+    }
+    .active>&, .components-item.active &{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+}
+.icon-caret{
+    background-image: url(../img/icons/caret.svg);
+}
+
+.icon-search{
+    width: 2.8rem;
+    height: 2.8rem;
+
+    &:before{
+        background-image: url(../img/icons/search.svg);
+    }
+
+    &:after{
+        background-image: url(../img/icons/search-active.svg);
+    }
+}
+
+.icon-close{
+
+    &:before{
+        background-image: url(../img/icons/close.svg);
+    }
+
+    &:after{
+        background-image: url(../img/icons/close-active.svg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icon-{
+    width: rem;
+    height: rem;
+    background-image: url(../img/icons/.svg);
+}
+
+.icon-{
+    width: rem;
+    height: rem;
+
+    &:before{
+        background-image: url(../img/icons/.svg);
+    }
+
+    &:after{
+        background-image: url(../img/icons/-active.svg);
+    }
+}

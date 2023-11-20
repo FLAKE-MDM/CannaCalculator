@@ -1,0 +1,65 @@
+.footer{
+    padding: 4.7rem 0 1.7rem;
+    background: #fff;
+    margin-top: auto;
+
+    @include bp(md){
+        padding: 2.4rem 0 1rem;
+    }
+
+    &-nav{
+       
+    }
+
+    &__text{
+        color: #B6D7D7;
+    }
+}
+
+.search{
+    position: relative;
+
+    &__input{
+        border: 1px solid #DFEEEE;
+        background: #DFEEEE;
+        padding: 1.95rem 3.1rem;
+        border-radius: 10rem;
+        width: 100%;
+        font-size: 1.5rem;
+        transition: all 0.3s ease-out;
+        font-family: 'Montserrat', sans-serif!important;
+
+        @include bp(sm){
+            padding: 1.5rem 5.2rem 1.5rem 2rem;
+        }
+
+        &:focus{
+            background: #fff;
+            border-color: $primary;
+        }
+
+        &::-webkit-input-placeholder{color:#466464!important}
+        &::-moz-placeholder{color:#466464!important}
+        &:-moz-placeholder{color:#466464!important}
+        &:-ms-input-placeholder{color:#466464!important}
+    }
+
+    &__button{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        right: 3.2rem;
+        border: none;
+        background-color: transparent;
+
+        @include bp(sm){
+            right: 1.5rem;
+        }
+    }
+}
+
+.copyright{
+    color: #6BA3A3;
+    margin-top: -0.1rem;
+}

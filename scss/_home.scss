@@ -1,0 +1,103 @@
+.preview{
+  margin: 4.9rem auto 9.6rem;
+  width: 84rem;
+  max-width: 100%;
+
+  @include bp(sm){
+    margin: 2rem 0 3rem;
+  }
+
+  .text_size-lg{
+    line-height: 150%;
+  }
+}
+
+// advantages
+.advantages{
+  margin-bottom: 5.7rem;
+
+  &-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    &__icon{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1.6rem;
+      background: #FFF;
+      width: 9.6rem;
+      height: 9.6rem;
+    }
+  }
+}
+
+// data-section
+.data{
+  &-section{
+    display: grid;
+    grid-template-columns: 59% auto;
+    grid-gap: 0 6.4rem;
+    margin-bottom: 12.4rem;
+
+    @include bp(sm){
+      margin-bottom: 6rem;
+      grid-template-columns: 100%;
+    }
+  }
+
+  &-sources{
+    padding: 3rem 3.1rem;
+    border-radius: 3.2rem;
+    background: #F6FCFB;
+    align-self: flex-start;
+
+    @include bp(sm){
+      padding: 2rem 1.5rem;
+      border-radius: 1rem;
+      margin-top: 2rem;
+    }
+
+    &__logos{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.6rem 4.8rem;
+      margin: -0.3rem 0.1rem 0;
+    }
+  }
+}
+
+// calculator
+.calculator{
+  border-radius: 4.8rem;
+  background: #0E4544;
+  margin: 12.3rem 0 1.1rem;
+
+  @include bp(sm){
+    margin-top: 6rem;
+    border-radius: 2rem;
+    padding: 4rem 1.5rem;
+  }
+
+  &__title{
+    margin-bottom: 4.3rem;
+  }
+
+  &__btn{
+    margin-top: 0.5rem;
+
+    @include bp(md-up){
+      padding-left: 4.8rem;
+      padding-right: 4.8rem;
+    }
+  }
+
+  .form-control{
+    &::-webkit-input-placeholder{color:#466464!important}
+    &::-moz-placeholder{color:#466464!important}
+    &:-moz-placeholder{color:#466464!important}
+    &:-ms-input-placeholder{color:#466464!important}
+  }
+}

@@ -1,0 +1,154 @@
+.header{
+    padding: 1.9rem 0 2.1rem;
+    background: #fff;
+
+    @include bp(md){
+        padding: 1rem 0;
+        position: relative;
+    }
+
+    &-nav{
+        &__item{
+            &:not(:first-child){
+                margin-left: 3.7rem;
+            }
+        }
+
+        &__link{
+            color: $light;
+
+            &.active{
+                color: $primary;
+            }
+
+            @include bp(hv){
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+.logo{
+    flex-shrink: 0;
+
+    @include bp(md){
+        width: 12rem;
+    }
+
+    @include bp(hv){
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
+
+.version{
+    font-size: 1rem;
+    line-height: 120%;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.8rem;
+    background: #EAFDF6;
+    margin: auto;
+    width: 30rem;
+    position: relative;
+    bottom: 0.1rem;
+}
+
+.nav{
+    margin-top: 2.3rem;
+
+    @include bp(md){
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        z-index: 50;
+        margin: 0;
+        border-top: 1px solid $primary;
+        border-bottom: 1px solid $primary;
+        padding: 1.5rem 0;
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.4);
+
+        .nav-list{
+            width: 75rem;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
+
+    .dropdown-toggle{
+        position: relative;
+        z-index: 51;
+
+        &.active{
+            color: $light;
+        }
+    }
+
+    &-list{
+        line-height: normal;
+
+        &__link{
+            color: $black;
+
+            @include bp(md){
+                display: block;
+                padding: 1rem 1.5rem;
+            }
+
+            &.active{
+                color: $primary;
+            }
+
+            @include bp(hv){
+                &:hover{
+                    color: $primary;
+                }
+            }
+
+            @include bp(md){
+               
+            }
+        }
+    }
+}
+
+.btn-menu{
+    display: block;
+    border: none;
+    align-self: center;
+    flex-shrink: 0;
+    margin-left: auto;
+    border-radius: 1rem;
+    padding: 1.5rem;
+
+    &__item{
+        display: block;
+        width: 2rem;
+        height: 0.2rem;
+        border-top-style: 5px;
+        background: #fff;
+        transition: all 0.3s ease-out;
+    }
+    &__item+&__item{
+        margin-top: 0.5rem;
+    }
+    &:hover{
+        .btn-menu__item{
+
+        }
+    }
+}
+.social-list{
+    &__item{
+        margin-left: 1.2rem;
+        width: 3.1rem;
+        height: 3rem;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}

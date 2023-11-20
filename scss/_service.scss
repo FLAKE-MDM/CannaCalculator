@@ -1,0 +1,123 @@
+.service{
+  &-preview{
+    padding: 15.1rem 0 12.6rem;
+    background: url(../img/bg-preview.jpg) 50% 50% no-repeat;
+    background-size: cover;
+
+    @include bp(md){
+      padding: 7rem 0 5rem;
+    }
+
+    &__content{
+      width: 84rem;
+      margin: 0 auto;
+      max-width: 100%;
+      line-height: 150%;
+    }
+  }
+
+  &-box{
+    @include bp(xxl-up){
+      margin-right: 0.3rem;
+    }
+  }
+
+  &-item{
+    grid-gap: 0;
+
+    &__text{
+      padding: 4.8rem;
+
+      @include bp(md){
+        padding: 3rem 2rem;
+      }
+    }
+
+  }
+}
+
+.bg-block{
+  background: #F5FFFC;
+
+  &__content{
+    padding: 4.9rem 3.2rem 2.3rem;
+
+    @include bp(lg){
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+// product-item
+.product-item {
+  padding: 4.8rem 3.2rem;
+  display: block;
+  color: $dark;
+
+  @include bp(lg){
+    padding: 3rem 2rem;
+  }
+
+  @include bp(hv){
+    &:hover{
+      background: #F4FFFB;
+      color: $dark;
+
+      .product-item__name{
+        color: #27CE92;
+      }
+    }
+  }
+
+  &:not(:first-child){
+    border-left: 1px solid $primary;
+
+    @include bp(md){
+      border: none;
+    }
+  }
+
+  &:nth-of-type(even){
+    @include bp(md){
+      border-left: 1px solid $primary;
+    }
+
+    @include bp(sm){
+      border-left: none;
+    }
+  }
+
+  &:nth-of-type(1), &:nth-of-type(2){
+    @include bp(md){
+      border-bottom: 1px solid $primary;
+    }
+  }
+  
+  &:not(:last-child){
+    @include bp(sm){
+      border-bottom: 1px solid $primary;
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__name {
+    transition: all 0.3s ease-out;
+    line-height: 120%;
+  }
+
+  &__dose {
+    color: #6BA3A3;
+  }
+}
+
+// form
+.form{
+  &__title{
+    padding-bottom: 0.2rem;
+  }
+}
