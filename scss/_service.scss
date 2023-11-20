@@ -17,6 +17,8 @@
   }
 
   &-box{
+    overflow: hidden;
+    
     @include bp(xxl-up){
       margin-right: 0.3rem;
     }
