@@ -142,40 +142,40 @@ body{
 
 
 // swiper
-.swiper{
-    &-pagination{
-        &-bullet{
-            width: 0.6rem;
-            height: 0.6rem;
-            margin: 0 0.4rem;
-            opacity: 1;
-            &:hover, &-active{
+// .swiper{
+//     &-pagination{
+//         &-bullet{
+//             width: 0.6rem;
+//             height: 0.6rem;
+//             margin: 0 0.4rem;
+//             opacity: 1;
+//             &:hover, &-active{
 
-            }
-        }
-    }
+//             }
+//         }
+//     }
 
-    .swiper-button-prev, .swiper-button-next{
-        width: 4rem;
-        height: 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        transition: all 0.3s ease-out;
-        background: #F8FCFF;
+//     .swiper-button-prev, .swiper-button-next{
+//         width: 4rem;
+//         height: 4rem;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         border-radius: 50%;
+//         transition: all 0.3s ease-out;
+//         background: #F8FCFF;
 
-        @include bp(hv){
-            &:hover{
-                // background: $light;
-            }
-        }
+//         @include bp(hv){
+//             &:hover{
+//                 // background: $light;
+//             }
+//         }
 
-        &:after{
-            display: none;
-        }
-    }
-}
+//         &:after{
+//             display: none;
+//         }
+//     }
+// }
 
 // breadcrumb
 .breadcrumb{
