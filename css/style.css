@@ -1416,11 +1416,11 @@ textarea {
 .header {
   padding: 1.9rem 0 2.1rem;
   background: #fff;
+  position: relative;
 }
 @media only screen and (max-width: 991px) {
   .header {
     padding: 1rem 0;
-    position: relative;
   }
 }
 .header-nav__item:not(:first-child) {
@@ -1466,6 +1466,34 @@ textarea {
 
 .nav {
   margin-top: 2.3rem;
+}
+.nav_center {
+  flex-grow: 1;
+  margin: 0 0 0 2rem;
+}
+@media only screen and (max-width: 1199px) {
+  .nav_center {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 50;
+    margin: 0;
+    border-top: 1px solid #0CAE74;
+    border-bottom: 1px solid #0CAE74;
+    padding: 1.5rem 0;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.4);
+  }
+  .nav_center .nav-list {
+    width: 75rem;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .nav_center .nav-list__link {
+    display: block;
+    padding: 1rem 1.5rem;
+  }
 }
 @media only screen and (max-width: 991px) {
   .nav {

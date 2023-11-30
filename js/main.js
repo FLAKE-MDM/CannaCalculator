@@ -75,6 +75,15 @@ $('.tab-link').click(function(e){
   $(this.getAttribute("href")).addClass('active');
 });
 
+// tabs
+$('.tab-link-js').click(function(e){
+  e.preventDefault();
+  $(this).parents(".tab-nav").find('.tab-link-js').removeClass('active');
+  $(this).addClass('active');
+  $(this).closest('.tab-section').find('.tab-pane').removeClass('active');
+  $(this.getAttribute("href")).addClass('active');
+});
+
 // up-link
 let $page = $('html, body');
 $('.up-link').click(function() {

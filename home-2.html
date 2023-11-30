@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBD Dosage Calculator</title>
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <a href="index.html" class="logo"><img src="img/logo.svg" alt="" class="img-fluid"></a>
+                    <nav class="nav collapse d-xl-block nav_center" id="nav">
+                      <ul class="nav-list d-xl-flex text_styling text_size-sm text_semibold justify-content-between">
+                          <li class="nav-list__item"><a href="#" class="nav-list__link">Калькулятор дозировки CBD</a></li>
+                          <li class="nav-list__item dropdown">
+                              <a href="#" class="nav-list__link dropdown-toggle">Недуги</a>
+                              <div class="dropdown-menu dropdown-menu_nav">
+                                  <a href="#" class="dropdown-menu__item">Слепота</a>
+                                  <a href="#" class="dropdown-menu__item">Глухота</a>
+                                  <a href="#" class="dropdown-menu__item">Аутизм</a>
+                              </div>
+                          </li>
+                          <li class="nav-list__item"><a href="#" class="nav-list__link">Список преимуществ масла CBD</a></li>
+                          <li class="nav-list__item"><a href="#" class="nav-list__link">Информация / Контакты</a></li>
+                          <li class="nav-list__item"><a href="#" class="nav-list__link">Взаимодействие КБР</a></li>
+                      </ul>
+                    </nav>
+                    <a href="#nav" class="btn btn-menu btn_primary d-xl-none collapse-link">
+                        <div class="btn-menu__item"></div>
+                        <div class="btn-menu__item"></div>
+                        <div class="btn-menu__item"></div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <div class="content">
+            <div class="container">
+                <!-- preview -->
+                <div class="preview text_center">
+                    <h1 class="title title_size-xl mb-md text_primary">Оцените свою дозу <span class="text_secondary">CBD</span></h1>
+                    <p class="text_size-lg text_dark">Основываясь на весе вашего тела и заболевании с помощью нашего простого в использовании калькулятора оценки дозировки CBD</p>
+                </div>
+                <!-- /preview -->
+                <!-- advantages -->
+                <div class="advantages d-grid grid-md-2 grid-lg-4">
+                    <div class="advantages-item">
+                        <div class="advantages-item__icon mb-lg"><img src="img/icons/advantages-1.svg" alt="" class="img-fluid"></div>
+                        <p>Персонализированная оценка дозы КБР в зависимости от веса / заболевания</p>
+                    </div>
+                    <div class="advantages-item">
+                        <div class="advantages-item__icon mb-lg"><img src="img/icons/advantages-2.svg" alt="" class="img-fluid"></div>
+                        <p>Данные, полученные из краудсорсинга / на основе исследований</p>
+                    </div>
+                    <div class="advantages-item">
+                        <div class="advantages-item__icon mb-lg"><img src="img/icons/advantages-3.svg" alt="" class="img-fluid"></div>
+                        <p>Персонализированная трехэтапная оценка дозы</p>
+                    </div>
+                    <div class="advantages-item">
+                        <div class="advantages-item__icon mb-lg"><img src="img/icons/advantages-4.svg" alt="" class="img-fluid"></div>
+                        <p>~20 000 счастливых пользователей в месяц</p>
+                    </div>
+                </div>
+                <!-- /advantages -->
+                <!-- data -->
+                <section class="box data-section mb-xl">
+                    <div class="data-section__content">
+                        <h2 class="title text_primary title_size-md mb-lg">Как мы собираем наши данные</h2>
+                        <p>Наш калькулятор оценки дозировки КБР основан на многочасовых независимых опросах о дозировке КБР, “глубоком погружении” в опубликованные исследования и отчеты, пользовательский опыт, исследования, блоги и форумы.</p>
+                        <p>Мы собрали все наши коллективные данные и соответствующим образом скорректировали наш оценочный калькулятор.</p>
+                        <p>Мы рекомендуем вам помочь нам собрать данные об опыте пользователей в отношении дозировки CBD, заполнив наш опрос об опыте пользователей.</p>
+                        <p class="mb-xl">Мы надеемся, что вам понравится наш мощный инструмент оценки дозировки!</p>
+                        <a href="#" class="btn btn_primary text_upper">калькулятор дозировки CBD</a>
+                    </div>
+                    <div class="data-sources">
+                        <div class="text_styling text_bold mb-lg">Источники оценки дозирования*</div>
+                        <div class="data-sources__logos text_black text_styling text_size-xl">
+                            <div class="data-sources__item text_blue">PubMed</div>
+                            <div class="data-sources__item text_orange">Reddit</div>
+                            <div class="data-sources__item text_light-blue">ProjectCBD</div>
+                            <div class="data-sources__item text_gray">NIH</div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /data -->
+                <section class="box mb-xl">
+                    <h2 class="title title_size-sm mb-lg">Краткое руководство по CBD</h2>
+                    <div class="text_primary text_styling text_semibold mb-xs">Что такое КБД?</div>
+                    <p>КБД — это экстрагированный компонент растения конопли. В отличие от растения марихуаны, растение конопли отличается отсутствием активного компонента марихуаны, ТГК. В отличие от ТГК, КБД не оставляет у пользователя ощущения опьянения или «кайфа». В настоящее время проводится множество исследований, анализирующих использование КБД при различных заболеваниях. Те, кто хочет добиться предполагаемого облегчения, которое может обеспечить каннабис, теперь могут добиться его с помощью использования КБД.</p>
+                    <p class="mb-lg">Те, кто страдает от тревоги, депрессии, боли, рака, а также других физиологических заболеваний, обращаются к КБД за возможным облегчением и телесным равновесием, которые он может обеспечить.</p>
+                    <div class="text_primary text_styling text_semibold mb-xs">Существуют ли какие-либо связанные с этим риски для здоровья?</div>
+                    <p>Никаких известных рисков для здоровья, связанных с КБД, не существует… однако тем, кто принимает определенные лекарства, следует действовать с осторожностью. В любом случае мы рекомендуем проконсультироваться с медицинским работником тем, кто принимает лекарства, которые могут взаимодействовать с грейпфрутом (подробнее о взаимодействии лекарств с КБД можно прочитать здесь . На самом деле, в широко распространенных средствах массовой информации имеется бесчисленное количество сообщений, которые приписывают КБД его положительное профилактическое действие. Обратитесь к нашему списку преимуществ масла CBD , чтобы узнать больше о преимуществах каннабидиола…</p>
+                </section>
+                <section class="box mb-xl">
+                    <h2 class="title title_size-sm mb-lg">Поиск правильной дозировки CBD</h2>
+                    <div class="text_primary text_styling text_semibold mb-xs">Какова типичная стартовая доза?</div>
+                    <p>Типичный метод определения возможной дозы КБД — начать с минимального количества. Например, пользователи могут начать с дозы 3–5 мг в течение первой недели. Если у пользователя не происходит никаких изменений, он может увеличить дозу до 10 мг и продолжать увеличивать ее постепенно, пока не обнаружит, что она субъективно эффективна и стабильно обеспечивает возможное облегчение.</p>
+                    <p class="mb-lg">Примите во внимание состояние или симптомы, которые вы пытаетесь лечить. От хронической боли до глаукомы, эпилепсии и нарушений сна — существует множество различных состояний, при которых могут потребоваться разные уровни дозировки. Если ваши симптомы вызывают сильную боль, судороги или другие серьезные симптомы, могут потребоваться более высокие дозы.</p>
+                    <div class="text_primary text_styling text_semibold mb-xs">Наш калькулятор дозировки КБД</div>
+                    <p>Мы учли это при создании нашего калькулятора дозировки КБД. Наш калькулятор оценки позволяет нашим пользователям выбирать заболевание и связанную с ним тяжесть, если это применимо, чтобы лучше оценить начальную и целевую дозировку КБД…</p>
+                </section>
+                <section class="box mb-xl">
+                    <h2 class="title title_size-sm mb-lg">Дозировка в зависимости от веса</h2>
+                    <div class="text_primary text_styling text_semibold mb-xs">Как вес влияет на дозировку КБД?</div>
+                    <p>Исследования показывают, что вполне возможно, что вес может играть важную роль с точки зрения дозировки КБД… В настоящее время существует две школы мысли в отношении расчета КБД, когда дело доходит до веса. Одна группа считает, что вес не имеет значения, поскольку КБД действует главным образом на каннабиноидные рецепторы, которые находятся в основном в головном и спинном мозге и почти идентичны у каждого человека… Тем не менее, другая школа мысли считает следующее: КБД действительно встречается другие ткани организма до достижения эндоканнабиноидной системы. Процесс, скорость и обороты, с которыми он перемещается и накапливается, различаются в зависимости от веса и массы тела… Следовательно, основываясь на наших собственных собранных данных, мы склонны согласиться с последним. При изучении ожирения и фармакокинетики (от массы тела до абсорбции лекарств) наука учитывает следующие факторы, влияющие на абсорбцию в зависимости от веса:</p>
+                    <p class="mb-sm"><span class="text_bold">СКОРОСТЬ АБСОРБЦИИ</span> – Скорость, с которой КБД может всасываться через эндоканнабиноидную систему организма.</p>
+                    <p class="mb-sm"><span class="text_bold">СКОРОСТЬ РАСПРЕДЕЛЕНИЯ</span> – Скорость, с которой КБД может распределяться по различным органам тела. Поскольку в разных частях тела есть рецепторы, которые принимают каннабиноиды с разной скоростью, распределение каннабиноидов играет роль в их абсорбции.</p>
+                    <p class="mb-lg"><span class="text_bold">СКОРОСТЬ МЕТАБОЛИЧЕСКОГО ОБМЕНА</span> – Скорость, с которой организм усваивает КБД (зависит от способа потребления).</p>
+                    <p>Подробнее об этом можно прочитать <a href="#" class="text_mediumbold">Здесь</a></p>
+                </section>
+                <section class="box mb-xl box_padding">
+                    <h2 class="title title_size-sm mb-lg">Различные методы употребления КБД</h2>
+                    <p class="mb-lg text_size-md">Вот некоторые из различных методов использования КБД, а также некоторые плюсы и минусы, которые вы, возможно, захотите рассмотреть, прежде чем выбирать метод, который подойдет именно вам.</p>
+                    <div class="text_primary text_styling text_semibold mb-xs">Настойка</div>
+                    <p class="mb-sm">может выпускаться в форме капель или спрея, которые доставляются прямо в рот. Это наиболее широко распространенный метод, и его дозу легче всего контролировать. Однако не на всех флаконах указано количество дозы, поэтому выбирайте внимательно.</p>
+                    <ul class="dots-list text_size-sm text_mediumbold mb-lg">
+                        <li class="dots-list__item">Этот метод является самым популярным методом потребления КБД. Поскольку он выпускается в жидкой форме, пользователи ценят простоту количественного определения и измерения правильной дозировки для лечения своих заболеваний. Сублингвальное применение — типичный метод, используемый с настойками.</li>
+                        <li class="dots-list__item">Настойки способны содержать наибольшее количество КБД на объем по сравнению с другими методами КБД.</li>
+                    </ul>
+                    <div class="text_primary text_styling text_semibold mb-xs">Местные средства</div>
+                    <p class="mb-lg">это бальзамы или средства для протирания тела, которые считаются, возможно, самым безопасным и осторожным способом использования КБД. Однако для обеспечения эффективной дозы его необходимо много, что может сделать его использование очень дорогим. Доза никогда не бывает точной, потому что она «на глаз».</p>
+                    <div class="text_primary text_styling text_semibold mb-xs">Съедобные продукты</div>
+                    <p class="mb-lg">от таких продуктов, как жевательные конфеты и кексы, до таблеток, найти продукты или таблетки с повышенным содержанием КБД относительно легко, и это, безусловно, самый вкусный способ их употребления. Однако для его всасывания требуется гораздо больше времени, поскольку он должен пройти через пищеварительную систему, прежде чем попадет в кровоток. Некоторые съедобные продукты не могут содержать адекватные дозы.</p>
+                    <div class="text_primary text_styling text_semibold mb-xs">Ручки для вейпа</div>
+                    <p class="mb-lg">хотя это самая быстрая форма доставки КБД в кровоток и они просты в использовании, также очень сложно контролировать дозировку, учитывая, насколько легко постоянно использовать ручки для вейпа.</p>
+                    <p>Одна форма может быть более эффективной для вас, чем другие, поэтому тот факт, что вы можете не найти эффективные съедобные или местные формы, не означает, что КБД не обязательно вам подходит. Однако, если вы хотите контролировать уровень дозировки, наиболее рекомендуемой формой являются настойки.</p>
+                </section>
+                <section class="box mb-xl">
+                    <h2 class="title title_size-sm mb-lg">Различные способы употребления КБР</h2>
+                    <div class="text_primary text_styling text_semibold mb-xs">Какова типичная начальная доза?</div>
+                    <p>Типичный метод определения возможной дозы CBD заключается в том, чтобы начать с минимального количества. Например, пользователи могут начать с дозы 3-5 мг в течение первой недели. Если пользователь не почувствует никаких изменений, он может увеличить дозу до 10 мг и продолжать увеличивать ее постепенно, пока не сочтет, что это субъективно эффективно и последовательно обеспечивает возможное облегчение.</p>
+                    <p class="mb-lg">Примите во внимание состояние или симптомы, которые вы пытаетесь лечить. От хронической боли до глаукомы, эпилепсии и нарушений сна - существует множество различных состояний, для которых могут потребоваться разные уровни дозировки. Если ваши симптомы вызывают сильную боль, судороги или другие экстремальные симптомы, могут потребоваться более высокие дозы.</p>
+                    <div class="text_primary text_styling text_semibold mb-xs">Наш калькулятор дозировки CBD</div>
+                    <p>Мы учли это при составлении нашего калькулятора дозировок CBD. Наш оценочный калькулятор позволяет нашим пользователям выбрать заболевание и связанную с ним степень тяжести, где это применимо, чтобы лучше оценить начальную и целевую дозировку CBD…</p>
+                </section>
+                <section class="box mb-xl">
+                    <h2 class="title title_size-sm mb-lg">Используя наш калькулятор дозировки CBD</h2>
+                    <div class="text_primary text_styling text_semibold mb-xs">Какова типичная начальная доза?</div>
+                    <p>Типичный метод определения возможной дозы CBD заключается в том, чтобы начать с минимального количества. Например, пользователи могут начать с дозы 3-5 мг в течение первой недели. Если пользователь не почувствует никаких изменений, он может увеличить дозу до 10 мг и продолжать увеличивать ее постепенно, пока не сочтет, что это субъективно эффективно и последовательно обеспечивает возможное облегчение.</p>
+                    <p class="mb-lg">Примите во внимание состояние или симптомы, которые вы пытаетесь лечить. От хронической боли до глаукомы, эпилепсии и нарушений сна - существует множество различных состояний, для которых могут потребоваться разные уровни дозировки. Если ваши симптомы вызывают сильную боль, судороги или другие экстремальные симптомы, могут потребоваться более высокие дозы.</p>
+                    <div class="text_primary text_styling text_semibold mb-xs">Наш калькулятор дозировки CBD</div>
+                    <p>Мы учли это при составлении нашего калькулятора дозировок CBD. Наш оценочный калькулятор позволяет нашим пользователям выбрать заболевание и связанную с ним степень тяжести, где это применимо, чтобы лучше оценить начальную и целевую дозировку CBD…</p>
+                </section>
+                <div class="text_center"><a href="#" class="btn btn_primary text_upper btn_size-md">Перейдите к нашему калькулятору дозировки CBD</a></div>
+                <!-- calculator -->
+                <div class="calculator text_inversion box text_styling">
+                    <div class="title calculator__title title_size-lg text_inversion">Калькулятор</div>
+                    <form action="#">
+                        <div class="d-md-grid grid-2 mb-md">
+                            <div class="form-group">
+                                <div class="form__label text_size-sm text_semibold">Болезнь</div>
+                                <div class="fake-select">
+                                    <a href="#" class="dropdown__toggle dropdown-toggle form-control justify-content-start"><div class="fake-select__value">Text</div></a>
+                                    <div class="dropdown-menu">
+                                        <label class="fake-select__item dropdown-menu__item">
+                                            <input type="radio" class="collapse" name="disease">
+                                            Слепота
+                                        </label>
+                                        <label class="fake-select__item dropdown-menu__item">
+                                            <input type="radio" class="collapse" name="disease">
+                                            Глухота
+                                        </label>
+                                        <label class="fake-select__item dropdown-menu__item">
+                                            <input type="radio" class="collapse" name="disease">
+                                            Аутизм
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form__label text_size-sm text_semibold">Строгость</div>
+                                <div class="fake-select">
+                                    <a href="#" class="dropdown__toggle dropdown-toggle form-control justify-content-start"><div class="fake-select__value">Выберите форму</div></a>
+                                    <div class="dropdown-menu">
+                                        <label class="fake-select__item dropdown-menu__item">
+                                            <input type="radio" class="collapse" name="rigor">
+                                            Капли
+                                        </label>
+                                        <label class="fake-select__item dropdown-menu__item">
+                                            <input type="radio" class="collapse" name="rigor">
+                                            Спрей
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-lg pb-xs">
+                            <div class="form__label text_size-sm text_semibold">Text</div>
+                            <input type="text" class="form-control range-value" id="price-value">
+                            <div id="price-range"></div>
+                        </div>
+                        <div class="d-md-grid grid-2 mb-md">
+                            <div class="form-group">
+                                <div class="form__label text_size-sm text_semibold">Ваше имя</div>
+                                <input type="text" class="form-control" placeholder="Как тебя зовут?">
+                            </div>
+                            <div class="form-group">
+                                <div class="form__label text_semibold text_size-sm">Электронная почта</div>
+                                <input type="email" class="form-control" placeholder="Введите свой адрес электронной почты">
+                                <div class="text_size-sm form__text">К этому приведет расчет дозировки</div>
+                            </div>
+                        </div>
+                        <div class="mb-md">
+                            <div class="form__label text_size-sm text_semibold">Вы хотите преобразовать результат дозировки CBD в капли в зависимости от объема и содержания CBD в вашем продукте?</div>
+                            <div class="d-grid grid-md-2 d-grid_sm">
+                                <label class="btn-label">
+                                    <input type="radio" class="collapse" name="drop">
+                                    <span class="btn btn_dark btn_size-sm w-100 text_semibold">Да, я хочу по каплям</span>
+                                </label>
+                                <div class="form-group">
+                                    <label class="btn-label">
+                                        <input type="radio" class="collapse" name="drop" checked>
+                                        <span class="btn btn_dark btn_size-sm w-100 text_semibold">Нет</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-md-grid grid-2 mb-md">
+                            <div class="form-group">
+                                <div class="form__label text_size-sm text_semibold">Каков общий объем в мл вашего продукта с КБР?</div>
+                                <div class="fake-select">
+                                    <a href="#" class="dropdown__toggle dropdown-toggle form-control justify-content-start"><div class="fake-select__value">30 мл</div></a>
+                                    <div class="dropdown-menu">
+                                        <label class="fake-select__item active">
+                                            <input type="radio" class="collapse" name="volume" checked>
+                                            30 мл
+                                        </label>
+                                        <label class="fake-select__item dropdown-menu__item">
+                                            <input type="radio" class="collapse" name="volume">
+                                            60 мл
+                                        </label>
+                                        <label class="fake-select__item dropdown-menu__item">
+                                            <input type="radio" class="collapse" name="volume">
+                                            90 мл
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form__label text_size-sm text_semibold">Каково общее количество КБР в продукте в миллиграммах?</div>
+                                <div class="fake-select">
+                                    <a href="#" class="dropdown__toggle dropdown-toggle form-control justify-content-start"><div class="fake-select__value">600 мг</div></a>
+                                    <div class="dropdown-menu">
+                                        <label class="fake-select__item dropdown-menu__item">
+                                            <input type="radio" class="collapse" name="amount">
+                                            200 мг
+                                        </label>
+                                        <label class="fake-select__item dropdown-menu__item">
+                                            <input type="radio" class="collapse" name="amount">
+                                            300 мг
+                                        </label>
+                                        <label class="fake-select__item active">
+                                            <input type="radio" class="collapse" name="amount" checked>
+                                            600 мг
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text_center">
+                            <button class="btn btn_primary text_upper btn_size-md calculator__btn">Получите расчет дозировки</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /calculator -->
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container container_md">
+                <div class="text_center text_size-lg text_styling mb-lg text_mediumbold text_dark">Изучите нашу базу знаний о КБР... Найдите тему ниже</div>
+                <div class="search mb-xxl">
+                    <form action="#">
+                        <input type="text" class="search__input" placeholder="Найдите здесь тему, относящуюся к заболеванию или КБР...">
+                        <button class="search__button icon icon_double icon-search"></button>
+                    </form>
+                </div>
+                <ul class="nav-list d-lg-flex text_styling text_size-sm text_semibold justify-content-between mb-xxl text_center_sm">
+                    <li class="nav-list__item d-md-none"><a href="#" class="nav-list__link">Cвязаться с нами</a></li>
+                    <li class="nav-list__item d-md-none"><a href="#" class="nav-list__link">Правила и условия | Возвраты</a></li>
+                    <li class="nav-list__item d-md-none"><a href="#" class="nav-list__link">О нас</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Калькулятор дозировки CBD</a></li>
+                    <li class="nav-list__item dropdown">
+                        <a href="#" class="nav-list__link dropdown-toggle">Недуги</a>
+                        <div class="dropdown-menu dropdown-menu_nav">
+                            <a href="#" class="dropdown-menu__item">Слепота</a>
+                            <a href="#" class="dropdown-menu__item">Глухота</a>
+                            <a href="#" class="dropdown-menu__item">Аутизм</a>
+                        </div>
+                    </li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Список преимуществ масла CBD</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Информация / Контакты</a></li>
+                    <li class="nav-list__item"><a href="#" class="nav-list__link">Взаимодействие КБР</a></li>
+                </ul>
+                <div class="copyright text_center text_styling text_mediumbold mb-md text_size-xs">Copyright 2023 © CBDDosageCalculator.com</div>
+                <div class="text_mediumbold text_size-xs text_styling footer__text">Я понимаю заявления на этом сайте относительно CBDDosageCalculator.com продукты не были оценены Управлением по контролю за продуктами питания и лекарствами. Эти продукты не предназначены для диагностики, лечения или профилактики каких-либо заболеваний. Результаты применения продуктов могут отличаться. Закон о фермерских хозяйствах 2018 года был подписан в декабре 2018 года, фактически легализовав коноплю на федеральном уровне, исключив ее из федерального списка контролируемых веществ и классифицировав как сельскохозяйственный товар. Все CBDDosageCalculator.com Продукты с КБР рекомендуются только для употребления взрослыми. Все продукты содержат менее 0,3% ТГК в пересчете на сухой вес.</div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+    </div>
+
+
+    <!-- callback -->
+    <div class="modal fade" id="callback">
+        <div class="modal-dialog">
+            <div class="modal__content">
+                <button type="button" class="icon icon-close modal-close modal__close icon_double"></button>
+                <div class="title mb-lg text_size-lg">Заказать звонок</div>
+                <div class="modal__form">
+                    <form action="#">
+                        <div class="form-group">
+                            <div class="form__label text_size-sm text_dark text_semibold text_styling">Ваше имя</div>
+                            <input type="text" class="form-control form-control_bordered" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <div class="form__label text_size-sm text_dark text_semibold text_styling">Номер телефона</div>
+                            <input type="tel" class="form-control form-control_bordered" placeholder="Телефон">
+                        </div>
+                        <button class="btn btn_primary text_upper w-100 modal__btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /callback -->
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
